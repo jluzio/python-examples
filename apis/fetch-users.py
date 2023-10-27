@@ -31,6 +31,18 @@ if response.status_code == 200:
             print(f"  Catchphrase: {user_data['company']['catchPhrase']}")
             print(f"  Business: {user_data['company']['bs']}")
             print()
+
+            # Example for Update
+            #print(f"Updating email for User ID {user_id}...")
+            #updated_user_data = user_data.copy()
+            #updated_user_data['email'] = 'new.email@example.com'
+            #
+            # Perform the update by sending a PUT request
+            # update_response = requests.put(user_data_url, json=updated_user_data)
+            # if update_response.status_code == 200:
+            #    print(f"Email updated successfully for User ID {user_id}")
+            #else:
+            #    print(f"Failed to update email for User ID {user_id}")            
         else:
             print(f"Failed to retrieve user data for user ID {user_id}.")
     else:
